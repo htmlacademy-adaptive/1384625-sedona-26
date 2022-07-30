@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Иван Деренюга](https://up.htmlacademy.ru/adaptive/26/user/1384625).
-* Наставник: [Антон Попо] (https://htmlacademy.ru/profile/id78239).
+* Наставник: [Антон Попов](https://htmlacademy.ru/profile/id78239).
 
 ---
 

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Форма отзыва</title>
+    <base href="https://htmlacademy-adaptive.github.io/1384625-sedona-26/3/">
+</head>
+  <body class="page__body">
+
+    <header class="main-header">
+
+      <a class="main-header__logo">
+        <img class="main-header__logo-image" src="img/sedona-logo.svg" width="185" height="96" alt="Сайт Седона">
+      </a>
+
+      <nav class="main-navigation">
+
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="catalog-container">
+      <img class="catalog-container__logo" src="img/catalog-container__logo.svg" width="282" height="214" alt="Седона">
+      <h1>СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
+
+      <section class="review">
+
+        <div class="review__wrapper">
+
+          <header class="review__header">
+            <h2 class="review__title">Оставьте свой отзыв</h2>
+            <p class="review__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </header>
+
+          <div class="review__full-name full-name">
+            <h3 class="review__subtitle">Представьтесь:</h3>
+            <p class="full-name__first-name">
+              <label>Имя:
+              <input type="text" name="first-name" placeholder="Пётр">
+              </label>
+            </p>
+            <p class="full-name__middle-name">
+              <label>Фамилия:
+                <input type="text" name="middle-name" placeholder="Пустота">
+              </label>
+            </p>
+            <p class="full-name__last-name">
+              <label>Отчество:
+                <input type="text" name="last-name" placeholder="Викторович">
+              </label>
+            </p>
+          </div>
+
+          <div class="review__contacts contacts">
+            <h3 class="review__subtitle">Контактная информация:</h3>
+            <p class="contacts__phone">
+              <label class="contacts__label">Контактный телефон*:
+              <input class="contacts__form" type="text" name="first-name" placeholder="Введите телефон">
+              </label>
+            </p>
+            <p class="contacts__email">
+              <label class="contacts__label">Электронная почта*:
+                <input class="contacts__form" type="text" name="middle-name" placeholder="Введите e-mail">
+              </label>
+            </p>
+          </div>
+
+          <div class="review__rating rating">
+            <h3 class="review__subtitle">Ваше Общее впечатление:</h3>
+
+            <ul class="rating__list">
+              <li class="rating__item">
+                <label class="rating__label">
+                  <input class="rating__form" type="radio" name="rating" value="positive" checked>
+                  Скорее положительное
+                </label>
+              </li>
+              <li class="rating__item">
+                <label class="rating__label">
+                  <input class="rating__form" type="radio" name="rating" value="negative">
+                  Скорее отрицательное
+                </label>
+              </li>
+              <li class="rating__item">
+                <label class="rating__label">
+                  <input class="rating__form" type="radio" name="rating" value="neutral">
+                  Затрудняюсь ответить
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="review__attractions attractions">
+            <h3 class="review__subtitle">Посещенные достопримечательности:</h3>
+
+            <ul class="attraction__list">
+              <li class="attraction__item">
+                <label class="attraction__label">
+                  <input class="attraction__form" type="checkbox" name="most-dyavola">
+                  Мост Дьявола
+                </label>
+              </li>
+              <li class="attraction__item">
+                <label class="attraction__label">
+                  <input class="attraction__form" type="checkbox" name="gora-kolokol">
+                  Гора-Колокол
+                </label>
+              </li>
+              <li class="attraction__item">
+                <label class="attraction__label">
+                  <input class="attraction__form" type="checkbox" name="slayd-park">
+                  Слайд-парк
+                </label>
+              </li>
+              <li class="attraction__item">
+                <label class="attraction__label">
+                  <input class="attraction__form" type="checkbox" name="krasnie-skali">
+                  Красные скалы
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="review__client-text client-text ">
+            <h3 class="review__subtitle">Опишите свои эмоции:</h3>
+            <label class="visually-hidden">Опишите свои эмоции:
+              <input class="client-text__form" type="text" name="text-review" placeholder="Опишите подробно все свои восторги ">
+            </label>
+          </div>
+
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="main-footer__wrapper">
+          <div class="main-footer__hashtag">#visitSEDONA</div>
+          <div class="main-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://youtube.com/htmlacademy"><span class="visually-hidden">Мы в Ютубе</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-footer__copyright copyright">
+            <b class="copyright__text">Разработано</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="copyright__icon" aria-hidden="true" focusable="false" width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#2E368F" d="M30.2 5H30L10.3 7.1v36.2L30 55l19.7-11.7V7.1L30.2 5zm17 36.8L30 52 12.8 41.8V27l17.1 10.2V39l-11.7-7v1.8L30 40.9v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8L29.9 12.8 12.8 23V9.4L30 7.6l17.2 1.8V23z"/></svg>
+              <span class="visually-hidden">HTML Academy</span>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+  </body>
+</html>

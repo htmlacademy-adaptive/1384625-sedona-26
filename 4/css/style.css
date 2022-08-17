@@ -1,0 +1,283 @@
+.main-header {
+  background-color: #ffffff;
+  color: #000000;
+}
+.main-navigation {
+  text-transform: uppercase;
+}
+.main-navigation__toggle {
+  border: none;
+  background-color: #ffffff;
+}
+.main-navigation__toggle-icon {
+  fill: #81B3D2;
+}
+.main-navigation__list {
+  list-style: none;
+}
+.main-navigation__link {
+  text-decoration: none;
+  color: #000000;
+}
+.hero {
+  background-image: url("../img/hero-sedona.jpg");
+  background-color: #766458;
+  color: #ffffff;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.advantages {
+  background-color: #ffffff;
+  color: black;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.advantages__title {
+  font-size: 18px ;
+  line-height: 26px;
+}
+.advantages__intro {
+  font-weight: 400;
+  font-size: 14px ;
+  line-height: 21px;
+}
+.advantages__list {
+  list-style: none;
+}
+.advantages__number {
+  font-weight: 400;
+  font-size: 14px ;
+  line-height: 21px;
+}
+.advantages__intro {
+  font-weight: 400;
+  font-size: 14px ;
+  line-height: 21px;
+}
+.advantage-description {
+  background-color: #81B3D2;
+  color: #ffffff;
+}
+.advantage-description__list {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+.advantage-description__text {
+  font-weight: 400;
+  font-size: 14px ;
+  line-height: 21px;
+}
+.hotel-reservation {
+  background-color: #ffffff;
+  color: black;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.hotel-reservation__title {
+  font-size: 21px ;
+  line-height: 26px;
+}
+.hotel-reservation__intro {
+  font-weight: 400;
+  font-size: 14px ;
+  line-height: 21px;
+}
+.main-footer {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+}
+.main-footer__hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.social__list {
+  list-style: none;
+}
+.social__item {
+  background-color: #81B3D2;
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.social__item--vkontakte {
+  background-image: url("../../img/social-vkontakte.svg");
+}
+.social__item--youtube {
+  background-image: url("../../img/social-youtube.svg");
+}
+.social__item--telegram {
+  background-image: url("../../img/social-telegram.svg");
+}
+.copyright__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.copyright__icon {
+  fill: #000000;
+}
+.review {
+  background-color: #ffffff;
+  color: #000000;
+}
+.review__header {
+  text-transform: uppercase;
+}
+.review__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 26px;
+}
+.review__intro {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.feedback-form {
+  background-color: #ffffff;
+  color: #000000;
+}
+.feedback-form__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.field__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.field__input {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  border: none;
+  background-color: #F2F2F2;
+}
+.rating__list {
+  list-style: none;
+}
+.rating__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.attractions__list {
+  list-style: none;
+}
+.attractions__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.text-review__input {
+  border: none;
+  background-color: #F2F2F2;
+}
+.review__form__note {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.photo-gallery {
+  background-color: #ffffff;
+  color: black;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.photo-gallery__header {
+  border-bottom: 1px solid #E5E5E5;
+}
+.photo-gallery__title {
+  font-size: 18px;
+  line-height: 26px;
+}
+.photo-gallery__intro {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+.card {
+  border-bottom: 1px solid #E5E5E5;
+}
+.card__title {
+  font-size: 14px;
+  line-height: 21px;
+}
+.card__author {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: none;
+}
+.cart__likes-count {
+  font-size: 14px;
+  line-height: 21px;
+}
+.presentation {
+  background-color: #ffffff;
+  color: black;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.presentation__title {
+  font-size: 18px;
+  line-height: 26px;
+}
+.presentation__intro {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+.button {
+  background-color: #81B3D2;
+  text-transform: uppercase;
+  border: none;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  font-display: swap;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.page {
+  font-family: "PT Sans", sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

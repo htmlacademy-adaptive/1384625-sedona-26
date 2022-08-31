@@ -1,8 +1,41 @@
 .hero {
-  background-image: url("../img/hero-sedona.jpg");
-  background-color: #766458;
-  color: #ffffff;
-  background-size: 100% auto;
+  height: 389px;
+  background-color: lighten(#81B3D3, 15%);
+  background-image: url("../../img/hero-sedona.jpg");
   background-repeat: no-repeat;
+  background-position: 100%;
 }
-//.hero__logo{}
+.hero__logo {
+  // не получается отцентровать
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+@media (min-width:@tablet-width){
+  .hero {
+    height: 518px;
+    background-image: url("../../img/hero-tablet-sedona.jpg");
+  }
+  .hero__logo {
+    // не получается отцентровать
+    margin: 0 auto;
+    margin-top: 90px;
+  }
+}
+
+
+@media (min-width:@desktop-width){
+
+  .hero {
+    background-image: url("../../img/hero-desktop-sedona.jpg");
+    height: 518px;
+    background-size: cover;
+  }
+  .hero__logo {
+    // не получается отцентровать
+
+    margin: 0 auto;
+    margin-top: 90px;
+  }
+}
+

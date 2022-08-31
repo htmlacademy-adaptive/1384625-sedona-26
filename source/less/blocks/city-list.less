@@ -1,0 +1,24 @@
+.city-list {
+  list-style: none;
+  margin: 0 ;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width:@tablet-width) {
+  .city-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 768px;
+  }
+}
+@media (min-width:@desktop-width) {
+  .city-list {
+    width: 1200px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

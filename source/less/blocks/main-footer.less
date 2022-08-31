@@ -1,16 +1,33 @@
-.main-footer{
-  background-color: #ffffff;
-  color: #000000;
-  font-family: "PT Sans", sans-serif;
-  text-transform: uppercase;
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 200px; //примерный размер
+  margin: 0 auto;
+  padding: 29px;
+
+  @media (min-width: @tablet-width){
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 640px;
+  }
+  @media (min-width: @tablet-width){
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 960px;
+  }
 }
-.main-footer__wrapper{}
-.main-footer__hashtag{
+.main-footer__hashtag {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 34px;
 }
-.main-footer__social{}
-.main-footer__copyright{}
-
-
+.main-footer__social {
+  margin-bottom: 40px;
+}

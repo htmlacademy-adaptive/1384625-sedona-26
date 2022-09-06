@@ -1,0 +1,38 @@
+.attractions__list {
+  list-style: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+  width:280px;
+  margin:0;
+  padding: 0;
+}
+.attractions__item {
+  text-transform: none;
+}
+
+@media (min-width:@tablet-width) {
+  .attractions__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 648px;
+    justify-content: center;
+  }
+  .attractions__item {
+    width: 224px;
+  }
+}
+@media (min-width:@desktop-width) {
+  .attractions__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    justify-content: center;
+  }
+  .attractions__item {
+    width: 172px;
+  }
+}
+
+

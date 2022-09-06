@@ -1,0 +1,32 @@
+.rating {
+  font-weight: 700;
+}
+.rating__list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  text-transform: none;
+  width: 320px;
+}
+
+@media (min-width:@tablet-width) {
+  .rating__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 648px;
+  }
+  .rating__item {
+    width:280px;
+  }
+
+}
+  @media (min-width:@desktop-width) {
+  .rating__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+  }
+  .rating__item {
+    width:280px;
+  }
+}

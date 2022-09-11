@@ -1,13 +1,25 @@
-.text-review {}
 .text-review__input {
-  border: none;
+  border:none;
   background-color: #F2F2F2;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: fade(#000000, 30%);
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+  height: 150px;
+  resize: none;
+  padding: 16px;
 }
-.review__form__note {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 21px;
-  text-transform: uppercase;
+@media (min-width:@tablet-width) {
+  .text-review__input {
+    width: 648px;
+  }
 }
-
-.review__form__button {}
+@media (min-width:@desktop-width) {
+  .text-review__input {
+    width: 768px;
+  }
+}

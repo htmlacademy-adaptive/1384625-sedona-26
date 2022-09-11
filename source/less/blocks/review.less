@@ -1,20 +1,27 @@
-.review{
-  background-color: #ffffff;
-  color:#000000;
-}
-.review__wrapper {}
 .review__header {
   text-transform: uppercase;
+  margin: 0 auto;
+  width: 280px;
+  box-sizing: border-box;
+  text-align: center;
+
+  @media (min-width:@tablet-width){
+    width: 435px;
+  }
+  @media (min-width:@desktop-width){
+    width: 435px;
+  }
 }
+
+
 .review__title {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 18px;
   line-height: 26px;
+
 }
 .review__intro {
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 21px;
 }
-.review__form {}
-

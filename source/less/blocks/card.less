@@ -1,18 +1,46 @@
 .card {
-  border-bottom: 1px solid #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+  background-color: #f2f2f2;
+
+  @media (min-width:@tablet-width){
+    width: 50%;
+    padding: 0;
+  }
+  @media (min-width: @desktop-width) {
+    width: 33.33%;
+    padding: 0;
+  }
 }
-.card__image{}
-.card__title{
+
+.card--full {
+  width: 100%;
+}
+
+.card__title {
+  font-weight: 700;
   font-size: 14px;
   line-height: 21px;
+  margin: 0;
 }
-.card__author{
+.card__author {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: none;
+  margin: 0;
 }
-.cart__likes-count{
+.card__likes-count {
+  font-weight: 700;
   font-size: 14px;
   line-height: 21px;
+  margin: 0;
 }
+.card__image {
+  width: 100%;
+  height: auto;
+}
+

@@ -1,5 +1,6 @@
 .rating {
   font-weight: 700;
+  text-align: center;
 }
 .rating__list {
   list-style: none;
@@ -7,6 +8,12 @@
   padding: 0;
   text-transform: none;
   width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rating__item {
+  margin-bottom: 26px;
 }
 
 @media (min-width:@tablet-width) {
@@ -14,6 +21,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 648px;
+    flex-direction: row;
   }
   .rating__item {
     width:280px;
@@ -25,6 +33,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 960px;
+    flex-direction: row;
   }
   .rating__item {
     width:280px;

@@ -59,7 +59,7 @@
   line-height: 26px;
   text-transform: uppercase;
   text-decoration: none;
-  display: block; // ? почему  блок
+  display: block; 
   padding: 14px;
   text-align: center;
   color: @mob-nav_txt-color;
@@ -89,6 +89,9 @@
   .main-navigation__toggle {
     display:none;
   }
+  .main-navigation__wrapper {
+    display: block;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -111,5 +114,8 @@
   }
   .main-navigation__toggle{
     display:none;
+  }
+  .main-navigation__wrapper {
+    display: block;
   }
 }

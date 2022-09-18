@@ -14,9 +14,16 @@
           <img class="main-header__logo-image" src="img/sedona-logo.svg" width="185" height="96" alt="Сайт Седона">
         </a>
 
-        <nav class="main-navigation">
+        <nav class="main-navigation main-navigation--closed">
           <button class="main-navigation__toggle" type="button">
-            <svg class="main-navigation__toggle-icon" width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" /></svg>
+            <svg class="main-navigation__toggle-burger" width="23" height="23" viewBox="0 0 23 22"  xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
+              <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
+              <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
+            </svg>
+            <svg class="main-navigation__toggle-close" width="23" height="23" viewBox="0 0 23 23"  xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z" fill="white"/>
+            </svg>
             <span class="visually-hidden">Открыть меню</span>
           </button>
 
@@ -40,7 +47,7 @@
       </header>
 
       <main class="form-container">
-        <header class="form-container__header hero">
+        <header class="form-container__header hero hero--form">
           <img class="hero__logo" src="img/sedona-header-logo.svg" width="229" height="39" alt="Седона">
           <h1 class="visually-hidden">Оставьте ваш отзыв</h1>
         </header>
@@ -148,7 +155,7 @@
                   <textarea class="text-review__input" rows="5">Опишите подробно все свои восторги</textarea>
                 </label>
               </fieldset>
-              <div class="feedback-form_button-container">
+              <div class="feedback-form__button-container">
                 <button class="feedback-form__button button" type="submit">Отправить отзыв</button>
                 <span class="feedback-form__note">* — обязательные поля</span>
               </div>

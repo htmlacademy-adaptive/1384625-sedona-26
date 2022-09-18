@@ -4,16 +4,7 @@
   flex-direction: column;
   width: 282px;
   margin: 0 auto;
-}
-@media (min-width:@tablet-width) {
-  .features__header {
-    width: 520px;
-  }
-}
-@media (min-width:@desktop-width) {
-  .features__header {
-    width: 520px;
-  }
+  margin-bottom: 56px;
 }
 
 .features__container {
@@ -22,38 +13,24 @@
   flex-wrap: wrap;
   margin: 0 auto;
 }
-@media (min-width:@tablet-width) {
-  .features__container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
 
 .features__card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 54px 22px 40px ;
   font-size: 18px;
   background-color: #EEEEEE;
   color: #000000;
   border-top: 1px solid #D6D6D6;
   width: 320px;
-}
-@media (min-width:@tablet-width) {
-  .features__card {
-    width: 256px;
-  }
-}
-@media (min-width:@desktop-width) {
-  .features__card {
-    width: 320px;
-  }
+  padding: 26px 18px;
+  margin: 0;
 }
 
 .features__card--picture {
   background-color: #81B3D2;
   color: #ffffff;
+  padding: 39px 16px;
 }
 
 .features__title {
@@ -64,8 +41,8 @@
   line-height: 26px;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 23px;
   text-align: center;
-  margin-bottom: 35px;
 }
 .features__number {
   font-family: 'PT Sans', 'Arial', sans-serif;
@@ -74,6 +51,8 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom:28px;
 }
 .features__intro {
   font-family: 'PT Sans', 'Arial', sans-serif;
@@ -86,7 +65,6 @@
   text-align: center;
 }
 
-
 .features__list {
   list-style: none;
   margin: 0 auto;
@@ -96,17 +74,53 @@
   width: 320px;
 }
 
+
 @media (min-width:@tablet-width) {
+  .features__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 768px;
+  }
   .features__list {
     flex-direction: row;
     flex-wrap: wrap;
     width: 768px;
   }
+  .features__header {
+    width: 520px;
+  }
+  .features__image {
+    width: 512px;
+    object-fit: cover;
+  }
+  .features__card {
+    width: 256px;
+    margin: 0;
+    padding: 32px; //задать вопрос
+  }
+
 }
 @media (min-width:@desktop-width) {
+  .features__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1200px;
+  }
   .features__list {
     flex-direction: row;
     flex-wrap: wrap;
     width: 1200px;
+  }
+  .features__card {
+    width: 400px;
+    margin: 0;
+    padding: 42px;
+  }
+  .features__header {
+    width: 520px;
+  }
+  .features__image {
+    width: 800px;
+    object-fit: cover;
   }
 }

@@ -4,22 +4,37 @@
   background-image: url("../../img/hero-sedona.jpg");
   background-repeat: no-repeat;
   background-position: 100%;
+  padding: 90px 19px;
 }
+
 .hero__logo {
-  // не получается отцентровать
   margin: 0 auto;
-  margin-top: 90px;
+  display: block;
 }
 
 @media (min-width:@tablet-width){
   .hero {
     height: 518px;
+    width: 100%;
     background-image: url("../../img/hero-tablet-sedona.jpg");
+    padding: 77px 19px;
   }
   .hero__logo {
-    // не получается отцентровать
     margin: 0 auto;
-    margin-top: 90px;
+  }
+  .hero--form{
+    height: 290px ;
+  }
+  .hero--catalog{
+    height: 290px ;
+  }
+  .hero--catalog .hero__logo {
+    width: 457px;
+    height: 78px;
+  }
+  .hero--form .hero__logo {
+    width: 457px;
+    height: 78px;
   }
 }
 
@@ -30,12 +45,25 @@
     background-image: url("../../img/hero-desktop-sedona.jpg");
     height: 518px;
     background-size: cover;
+    padding: 77px 19px;
   }
   .hero__logo {
-    // не получается отцентровать
-
-    margin: 0 auto;
-    margin-top: 90px;
+     margin: 0 auto;
   }
+  .hero--form{
+    height: 290px ;
+  }
+  .hero--catalog{
+    height: 290px ;
+  }
+  .hero--catalog .hero__logo {
+    width: 457px;
+    height: 80px;
+  }
+  .hero--form .hero__logo {
+    width: 457px;
+    height: 78px;
+  }
+
 }
 

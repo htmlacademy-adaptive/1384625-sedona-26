@@ -12,3 +12,33 @@
   border: none;
   padding: 16px;
 }
+.field--phone {
+  position: relative;
+}
+.field--email {
+  position: relative;
+}
+.field--phone::before {
+  content: '';
+  width: 58px;
+  height: 58px;
+  background-color: #E6E6E6;
+  background-image: url(../img/contacts-phone-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.field--email::before {
+  content: '';
+  width: 58px;
+  height: 58px;
+  background-color: #E6E6E6;
+  background-image: url(../img/contacts-email-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

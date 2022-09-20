@@ -1,7 +1,7 @@
 .hero {
   height: 389px;
   background-color: lighten(#81B3D3, 15%);
-  background-image: url("../../img/hero-sedona.jpg");
+  background-image: url("../img/hero-mobile.jpg@1x.jpg");
   background-repeat: no-repeat;
   background-position: 100%;
   padding: 90px 19px;
@@ -14,10 +14,13 @@
 
 @media (min-width:@tablet-width){
   .hero {
-    height: 518px;
     width: 100%;
-    background-image: url("../../img/hero-tablet-sedona.jpg");
+    background-image: url("../img/hero-tablet@1x.jpg");
     padding: 77px 19px;
+  }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-tablet@2x.jpg");
+    background-size: 1200px auto;
   }
   .hero__logo {
     margin: 0 auto;
@@ -42,10 +45,14 @@
 @media (min-width:@desktop-width){
 
   .hero {
-    background-image: url("../../img/hero-desktop-sedona.jpg");
+    background-image: url("../img/hero-desktop.jpg@1x.jpg");
     height: 518px;
     background-size: cover;
     padding: 77px 19px;
+  }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-desktop.jpg@2x.jpg");
+    background-size: 1200px auto;
   }
   .hero__logo {
      margin: 0 auto;

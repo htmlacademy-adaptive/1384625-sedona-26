@@ -210,7 +210,7 @@
 .hero {
   height: 389px;
   background-color: #bad5e7;
-  background-image: url("../../img/hero-sedona.jpg");
+  background-image: url("../img/hero-mobile.jpg@1x.jpg");
   background-repeat: no-repeat;
   background-position: 100%;
   padding: 90px 19px;
@@ -221,9 +221,8 @@
 }
 @media (min-width: 768px) {
   .hero {
-    height: 518px;
     width: 100%;
-    background-image: url("../../img/hero-tablet-sedona.jpg");
+    background-image: url("../img/hero-tablet@1x.jpg");
     padding: 77px 19px;
   }
   .hero__logo {
@@ -246,7 +245,7 @@
 }
 @media (min-width: 1200px) {
   .hero {
-    background-image: url("../../img/hero-desktop-sedona.jpg");
+    background-image: url("../img/hero-desktop.jpg@1x.jpg");
     height: 518px;
     background-size: cover;
     padding: 77px 19px;
@@ -828,6 +827,9 @@
     line-height: 26px;
     margin-bottom: 24px;
   }
+  .review__header {
+    border-bottom: none;
+  }
 }
 @media (min-width: 1200px) {
   .review__header {
@@ -838,6 +840,9 @@
     font-size: 30px;
     line-height: 26px;
     margin-bottom: 39px;
+  }
+  .review__header {
+    border-bottom: none;
   }
 }
 .feedback-form__group {
@@ -882,6 +887,12 @@
   .feedback-form__button {
     width: 324px;
   }
+  .feedback-form__container .feedback-form__group {
+    border: none;
+  }
+  .feedback-form__container .feedback-form__group:nth-of-type(1) {
+    border-right: 1px solid #DBDBDB;
+  }
 }
 @media (min-width: 1200px) {
   .feedback-form__container {
@@ -897,6 +908,12 @@
   }
   .feedback-form__button {
     width: 384px;
+  }
+  .feedback-form__container .feedback-form__group {
+    border: none;
+  }
+  .feedback-form__container .feedback-form__group:nth-of-type(1) {
+    border-right: 1px solid #DBDBDB;
   }
 }
 .rating {
@@ -1030,8 +1047,8 @@
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  right: 52px;
-  top: 22px;
+  right: 0;
+  bottom: 0;
 }
 .field--email::before {
   content: '';
@@ -1042,7 +1059,7 @@
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  right: 52px;
-  top: 22px;
+  right: 0;
+  bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

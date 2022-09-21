@@ -12,6 +12,12 @@
   text-transform: none;
   margin-bottom: 26px;
 }
+.attractions__label {
+  position: relative;
+}
+.attractions__input {
+  margin-right: 40px;
+}
 
 @media (min-width:@tablet-width) {
   .attractions__list {
@@ -35,5 +41,24 @@
     width: 172px;
   }
 }
-
-
+.attractions__mark {
+  position: absolute;
+  top: -7px;
+  left: -54px;
+  width: 46px;
+  height: 46px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.attractions__input[type="checkbox"]:checked + .attractions__mark::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 13px;
+  width: 22px;
+  height: 16px;
+  background-image: url(../img/checked-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}

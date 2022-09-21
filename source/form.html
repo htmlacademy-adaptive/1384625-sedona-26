@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Форма отзыва</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
@@ -103,19 +103,22 @@
                 <ul class="rating__list">
                   <li class="rating__item">
                     <label class="rating__label">
-                      <input class="rating__form" type="radio" name="rating" value="positive" checked>
+                      <input class="rating__form visually-hidden" type="radio" name="rating" value="positive" checked>
+                      <span class="rating__mark"></span>
                       Скорее положительное
                     </label>
                   </li>
                   <li class="rating__item">
                     <label class="rating__label">
-                      <input class="rating__form" type="radio" name="rating" value="negative">
+                      <input class="rating__form visually-hidden" type="radio" name="rating" value="negative">
+                      <span class="rating__mark"></span>
                       Скорее отрицательное
                     </label>
                   </li>
                   <li class="rating__item">
                     <label class="rating__label">
-                      <input class="rating__form" type="radio" name="rating" value="neutral">
+                      <input class="rating__form visually-hidden" type="radio" name="rating" value="neutral">
+                      <span class="rating__mark"></span>
                       Затрудняюсь ответить
                     </label>
                   </li>
@@ -127,25 +130,29 @@
                 <ul class="attractions__list">
                   <li class="attractions__item">
                     <label class="attractions__label">
-                      <input class="attractions__input" type="checkbox" name="most-dyavola">
+                      <input class="attractions__input visually-hidden" type="checkbox" name="most-dyavola">
+                      <span class="attractions__mark"></span>
                       Мост Дьявола
                     </label>
                   </li>
                   <li class="attractions__item">
                     <label class="attractions__label">
-                      <input class="attractions__input" type="checkbox" name="gora-kolokol">
+                      <input class="attractions__input visually-hidden" type="checkbox" name="gora-kolokol">
+                      <span class="attractions__mark"></span>
                       Гора-Колокол
                     </label>
                   </li>
                   <li class="attractions__item">
                     <label class="attractions__label">
-                      <input class="attractions__input" type="checkbox" name="slayd-park">
+                      <input class="attractions__input visually-hidden" type="checkbox" name="slayd-park">
+                      <span class="attractions__mark"></span>
                       Слайд-парк
                     </label>
                   </li>
                   <li class="attractions__item">
                     <label class="attractions__label">
-                      <input class="attractions__input" type="checkbox" name="krasnie-skali">
+                      <input class="attractions__input visually-hidden" type="checkbox" name="krasnie-skali">
+                      <span class="attractions__mark"></span>
                       Красные скалы
                     </label>
                   </li>

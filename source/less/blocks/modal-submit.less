@@ -5,8 +5,9 @@
   align-items: center;
   text-transform: uppercase;
   background-color: #ffffff;
-  padding: 45px 42px 35px;
-  top:50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .modal-submit__title{
   font-weight: 700;
@@ -21,7 +22,6 @@
   font-size: 14px;
   line-height: 21px;
   margin: 0;
-  margin-bottom: 54px;
 }
 .modal-submit__button {
   width: 280px;
@@ -29,9 +29,31 @@
 .modal-submit__button-container {
   width: 100%;
   text-align: center;
+  background-color: #f2f2f2;
+  padding: 44px 91px;
+}
+.modal-submit__wrapper {
+  text-align: center;
+  padding: 53px 99px 30px;
+  width: 640px;
 }
 
-.modal-submit--close {
-  display: none;
-}
+// .modal-submit--close {
+//   display: none;
+// }
 
+@media(min-width:@tablet-width){
+  .modal-submit__title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+  }
+  .modal-submit__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .modal-submit__button {
+    width: 458px;
+  }
+}

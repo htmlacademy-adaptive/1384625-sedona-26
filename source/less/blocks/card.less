@@ -3,27 +3,26 @@
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
-  padding: 20px;
-  background-color: #f2f2f2;
+  padding: 26px 20px 24px;
+  background-color: #ffffff;
 }
-
-
 
 .card__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   margin: 0;
-  margin-bottom: 12px;
 }
+
 .card__author {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: none;
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 11px;
 }
+
 .card__likes-count {
   font-weight: 700;
   font-size: 14px;
@@ -34,21 +33,27 @@
 
 .card__image {
   width: 100%;
-  height: 267px;
+  height: 280px;
   object-fit: cover;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
+
 .card__likes-icon {
   margin-right: 14px ;
+  fill:#000000;
+  opacity: 0.3;
 }
+
 .card__likes-container {
   display: flex;
+  align-items: baseline;
 }
 
 @media (min-width:@tablet-width){
   .card {
     width: 50%;
     padding: 0;
+    background-color: #f2f2f2;
   }
   .card--full {
     width: 100%;
@@ -58,12 +63,14 @@
   }
   .card__image {
     margin-bottom: 0;
+    height: 267px;
   }
   .card__author {
     margin-bottom: 0;
   }
 
 }
+
 @media (min-width: @desktop-width) {
   .card {
     width: 33.33%;
@@ -77,8 +84,11 @@
   }
   .card__image {
     margin-bottom: 0;
+    height: 267px;
+    display: block;
   }
   .card__likes-icon {
-    fill: #ffffff; //не работает почему то
-  }
+    fill: #ffffff;
+    opacity: 1;
+}
 }

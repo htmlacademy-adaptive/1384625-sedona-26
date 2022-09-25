@@ -7,6 +7,7 @@
   top:0;
   left: 0;
   right: 0;
+  z-index: 3;
 }
 
 .main-navigation__toggle {
@@ -16,8 +17,8 @@
   background-color: transparent;
   width: 55px;
   height: 55px;
-  top:0px;
-  right:0;
+  top: 2px;
+  right: 3px;
   z-index: 2;
 }
 .main-navigation__toggle-burger {
@@ -39,7 +40,9 @@
 .main-navigation--opened .main-navigation__toggle-close{
   display: block;
 }
-
+.main-navigation--opened .main-navigation__toggle {
+  display: none;
+}
 .main-navigation__list {
   list-style: none;
   margin: 0;
@@ -59,7 +62,7 @@
   line-height: 26px;
   text-transform: uppercase;
   text-decoration: none;
-  display: block; 
+  display: block;
   padding: 14px;
   text-align: center;
   color: @mob-nav_txt-color;
@@ -79,6 +82,7 @@
     border: none;
     font-size: 14px;
     line-height: 26px;
+
   }
   .main-navigation__item:nth-of-type(2) .main-navigation__link {
     margin-right: 153px;
@@ -103,14 +107,13 @@
     color: @tab-nav_txt-color;
     background-color:  @tab-nav_bg-color;
     border: none;
+    width: 240px;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 21px;
+    padding: 19px 27px 13px;
   }
   .main-navigation__item:nth-of-type(2) .main-navigation__link {
     margin-right: 240px;
-  }
-  .main-navigation__link {
-    width: 240px;
   }
   .main-navigation__toggle{
     display:none;
@@ -118,4 +121,5 @@
   .main-navigation__wrapper {
     display: block;
   }
+
 }

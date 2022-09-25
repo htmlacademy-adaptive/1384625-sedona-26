@@ -17,7 +17,8 @@
           <img class="main-header__logo-image" src="img/sedona-logo.svg" width="185" height="96" alt="Сайт Седона">
         </a>
 
-        <nav class="main-navigation main-navigation--closed">
+
+        <nav class="main-navigation main-navigation--opened">
           <button class="main-navigation__toggle" type="button">
             <svg class="main-navigation__toggle-burger" width="23" height="23" viewBox="0 0 23 22"  xmlns="http://www.w3.org/2000/svg">
               <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
@@ -52,6 +53,10 @@
       <main class="form-container">
         <header class="form-container__header hero hero--form">
           <img class="hero__logo" src="img/sedona-header-logo.svg" width="229" height="39" alt="Седона">
+          <svg  class="hero-triangle" width="320" height="57" viewBox="0 0 320 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-190.171 23.7L-440 0V57H-190.171H160.55L-190.171 0V23.7Z" fill="white"/>
+            <path d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z" fill="white"/>
+          </svg>
           <h1 class="visually-hidden">Оставьте ваш отзыв</h1>
         </header>
 
@@ -66,35 +71,39 @@
               <div class="feedback-form__container">
                 <fieldset class="feedback-form__group contact-group" >
                   <legend class="feedback-form__title">Представьтесь:</legend>
-                  <p class="feedback-form__field-group field">
-                    <label class="field__label">Имя*:
-                      <input class="field__input" type="text" name="first-name" placeholder="Пётр">
-                    </label>
-                  </p>
-                  <p class="feedback-form__field-group field">
-                    <label class="field__label">Фамилия*:
-                      <input class="field__input" type="text" name="middle-name" placeholder="Пустота">
-                    </label>
-                  </p>
-                  <p class="feedback-form__field-group field">
-                    <label class="field__label">Отчество:
-                      <input class="field__input" type="text" name="last-name" placeholder="Викторович">
-                    </label>
-                  </p>
+                  <div class="feedback-form__wrapper feedback-form__wrapper--p-right">
+                    <p class="feedback-form__field-group field">
+                      <label class="field__label"><span>Имя*:</span>
+                        <input class="field__input" type="text" name="first-name" placeholder="Пётр">
+                      </label>
+                    </p>
+                    <p class="feedback-form__field-group field">
+                      <label class="field__label"><span>Фамилия*:</span>
+                        <input class="field__input" type="text" name="middle-name" placeholder="Пустота">
+                      </label>
+                    </p>
+                    <p class="feedback-form__field-group field">
+                      <label class="field__label"><span>Отчество:</span>
+                        <input class="field__input" type="text" name="last-name" placeholder="Викторович">
+                      </label>
+                    </p>
+                  </div>
                 </fieldset>
 
                 <fieldset class="feedback-form__group contact-group">
                   <legend class="feedback-form__title">Контактная информация:</legend>
-                  <p class="feedback-form__field-group field field--phone">
-                    <label class="field__label">Контактный телефон*:
-                      <input class="field__input " type="text" name="first-name" placeholder="Введите телефон">
-                    </label>
-                  </p>
-                  <p class="feedback-form__field-group field field--email">
-                    <label class="field__label">Электронная почта*:
-                      <input class="field__input" type="text" name="middle-name" placeholder="Введите e-mail">
-                    </label>
-                  </p>
+                  <div class="feedback-form__wrapper feedback-form__wrapper--p-left">
+                    <p class="feedback-form__field-group field field--phone">
+                      <label class="field__label"><span>Контактный телефон*:</span>
+                        <input class="field__input " type="text" name="first-name" placeholder="Введите телефон">
+                      </label>
+                    </p>
+                    <p class="feedback-form__field-group field field--email">
+                      <label class="field__label"><span>Электронная почта*:</span>
+                        <input class="field__input" type="text" name="middle-name" placeholder="Введите e-mail">
+                      </label>
+                    </p>
+                  </div>
 
                 </fieldset>
               </div>
@@ -105,21 +114,21 @@
                     <label class="rating__label">
                       <input class="rating__form visually-hidden" type="radio" name="rating" value="positive" checked>
                       <span class="rating__mark"></span>
-                      Скорее положительное
+                      <span class="rating__text">Скорее положительное</span>
                     </label>
                   </li>
                   <li class="rating__item">
                     <label class="rating__label">
                       <input class="rating__form visually-hidden" type="radio" name="rating" value="negative">
                       <span class="rating__mark"></span>
-                      Скорее отрицательное
+                      <span class="rating__text">Скорее отрицательное</span>
                     </label>
                   </li>
                   <li class="rating__item">
                     <label class="rating__label">
                       <input class="rating__form visually-hidden" type="radio" name="rating" value="neutral">
                       <span class="rating__mark"></span>
-                      Затрудняюсь ответить
+                      <span class="rating__text">Затрудняюсь ответить</span>
                     </label>
                   </li>
                 </ul>
@@ -174,6 +183,7 @@
         </section>
 
 
+
       </main>
       <footer class="main-footer">
         <div class="main-footer__wrapper">
@@ -203,5 +213,21 @@
         </div>
       </footer>
     </div>
+
+    <div class="modal-warning modal-warning--close">
+      <h2 class="modal-warning__title">Что-то пошло не так!</h2>
+      <p class="modal-warning__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal-warning__button button">ОК</button>
+    </div>
+    <div class="modal-submit modal-submit--close">
+      <div class="modal-submit__wrapper">
+        <h2 class="modal-submit__title">Ваш отзыв отправлен!</h2>
+        <p class="modal-submit__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="modal-submit__button-container">
+        <button class="modal-submit__button button">Закрыть окно</button>
+      </div>
+    </div>
+
   </body>
 </html>

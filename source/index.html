@@ -96,8 +96,8 @@
         <section class="features">
             <h2 class="visually-hidden">Преимущества Седоны</h2>
             <header class="features__header">
-              <h3 class="features__title">Седона — небольшой<br> городок в Аризоне,<br> заслуживающий большего!</h3>
-              <p class="features__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+              <h3 class="features__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
+              <p class="features__intro features__header-inro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
               <svg class="features__decor" width="320" height="37" viewBox="0 0 320 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M-225 0H159V37L-225 0Z" fill="white"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M543 0H159V37L543 0Z" fill="white"/>
@@ -105,78 +105,84 @@
             </header>
 
             <div class="features__container">
-              <div class="features__card features__card--picture">
-                <h3 class="features__title">Настоящий городок</h3>
-                <p class="features__number">-№1-</p>
-                <p class="features__intro">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <div class="features__card features__card--picture features__card--ident">
+                <h3 class="features__title features__title--ident">Настоящий городок</h3>
+                <p class="features__number">— №1 —</p>
+                <p class="features__intro features__card-intro">Cедона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/advantages-1-desktop@1x.jpg 1x, img/advantages-1-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/advantages-1-tablet@1x.jpg 1x, img/advantages-1-tablet@2x.jpg 2x">
-                <img class="features__image" src="img/advantages-1-mobile.jpg" width="320" height="260" srcset="img/advantages-1-mobile@2x.jpg 2x" alt="Отель в городе">
+                <img class="features__image" src="img/advantages-1-mobile@1x.jpg" width="320" height="260" srcset="img/advantages-1-mobile@2x.jpg 2x" alt="Отель в городе">
               </picture>
             </div>
             <ul class="features__city-list city-list">
               <li class="city-list__item city-list__item--hotel">
-                <svg class="city-list__icon" width="75" height="72" viewBox="0 0 75 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                 <use xlink:href="#icon-hotel"></use>
-                </svg>
+                <div class="city-list__icon-wrapper">
+                  <svg class="city-list__icon" width="75" height="72" viewBox="0 0 75 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#icon-hotel"></use>
+                  </svg>
+                </div>
                 <div class="city-list__wrapper">
                   <h4 class="city-list__title">Жилье</h4>
-                  <p class="city-list__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  <p class="city-list__text features__card-intro">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </div>
               </li>
               <li class="city-list__item city-list__item--food">
-                <svg class="city-list__icon" width="76" height="68" viewBox="0 0 76 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="#icon-food"></use>
-                </svg>
+                <div class="city-list__icon-wrapper">
+                  <svg class="city-list__icon" width="76" height="68" viewBox="0 0 76 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#icon-food"></use>
+                  </svg>
+                </div>
                 <div class="city-list__wrapper">
                   <h4 class="city-list__title">Еда</h4>
-                  <p class="city-list__text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+                  <p class="city-list__text features__card-intro">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </div>
               </li>
               <li class="city-list__item city-list__item--souvenirs">
-                <svg class="city-list__icon" width="64" height="75" viewBox="0 0 64 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="#icon-souvenirs"></use>
-                </svg>
+                <div class="city-list__icon-wrapper">
+                  <svg class="city-list__icon" width="64" height="75" viewBox="0 0 64 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#icon-souvenirs"></use>
+                  </svg>
+                </div>
                 <div class="city-list__wrapper">
                   <h4 class="city-list__title">Сувениры</h4>
-                  <p class="city-list__text">Не только китайского, но и местного производства!</p>
+                  <p class="city-list__text features__card-intro features__card-intro--ident">Не только китайского, но и местного производства!</p>
                 </div>
               </li>
             </ul>
-            <div class="features__container">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/advantages-2-desktop@1x.jpg 1x, img/advantages-2-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/advantages-2-tablet@1x.jpg 1x, img/advantages-2-tablet@2x.jpg 2x">
-                <img class="features__image" src="img/advantages-2-mobile.jpg" width="320" height="260" srcset="img/advantages-2-mobile@2x.jpg 2x" alt="Отель в городе">
-              </picture>
+            <div class="features__container features__container--reverse">
                 <div class="features__card features__card--picture">
-                <h3 class="features__title">Там есть Мост дьявола</h3>
-                <p class="features__number">-№2-</p>
-                <p class="features__intro">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-              </div>
+                  <h3 class="features__title features__title--ident">Там есть мост дьявола</h3>
+                  <p class="features__number">— №2 —</p>
+                  <p class="features__intro">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                </div>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/advantages-2-desktop@1x.jpg 1x, img/advantages-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/advantages-2-tablet@1x.jpg 1x, img/advantages-2-tablet@2x.jpg 2x">
+                  <img class="features__image" src="img/advantages-2-mobile@1x.jpg" width="320" height="260" srcset="img/advantages-2-mobile@2x.jpg 2x" alt="Отель в городе">
+                </picture>
             </div>
 
             <ol class="features__list">
               <li class="features__item">
                 <div class="features__card">
-                  <h3 class="features__title">Небольшая площадь</h3>
-                  <p class="features__number">-№3-</p>
+                  <h3 class="features__title features__title--ident">Небольшая площадь</h3>
+                  <p class="features__number">— №3 —</p>
                   <p class="features__intro">Все интересные места находятся очень близко</p>
                 </div>
               </li>
               <li class="features__item">
                 <div class="features__card">
-                  <h3 class="features__title">Красивая дорога</h3>
-                  <p class="features__number">-№4-</p>
+                  <h3 class="features__title features__title--ident">Красивая дорога</h3>
+                  <p class="features__number">— №4 —</p>
                   <p class="features__intro">Ехать в Седону ИЗ Лас-Вегаса совсем не скучно!</p>
                 </div>
               </li>
               <li class="features__item">
                 <div class="features__card">
-                  <h3 class="features__title">Мало туристов</h3>
-                  <p class="features__number">-№5-</p>
+                  <h3 class="features__title features__title--ident">Мало туристов</h3>
+                  <p class="features__number">— №5 —</p>
                   <p class="features__intro">Большинство едет в гранд каньон и толпится там</p>
                 </div>
               </li>
@@ -184,8 +190,8 @@
         </section>
 
         <section class="hotel-reservation">
-          <h3 class="hotel-reservation__title">Заинтерисовались?</h3>
-          <p class="hotel-reservation__intro">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <h3 class="hotel-reservation__title">Заинтересовались?</h3>
+          <p class="hotel-reservation__intro"> <span>Укажите предполагаемые даты поездки,</span> и мы покажем вам лучшие предложения гостиниц в седоне </p>
           <a class="hotel-reservation__button button" href="#">Найти Гостиницу</a>
         </section>
 

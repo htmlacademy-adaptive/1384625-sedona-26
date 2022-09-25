@@ -1,18 +1,27 @@
 .city-list {
   list-style: none;
   margin: 0 ;
-  padding: 0;
+  padding: 25px 18px 48px;
   display: flex;
   flex-direction: column;
   width: 320px;
   margin: 0 auto;
 }
-.city-list__item {
-  width: 320px;
-  display: flex;
-  padding: 23px 18px;
+.city-list__icon {
+  height: 100%;
+  width: 100%;
 }
-
+.city-list__item {
+  display: flex;
+  padding: 0;
+  align-items: flex-start;
+}
+.city-list__item:not(:last-child) {
+  margin-bottom: 22px;
+}
+.city-list__wrapper {
+  padding-top: 8px;
+}
 .city-list__title {
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-style: normal;
@@ -32,6 +41,12 @@
   text-transform: uppercase;
   margin: 0;
 }
+.city-list__icon-wrapper {
+  min-height: 38px;
+  width: 40px;
+  flex-shrink: 0;
+  margin-right: 8px;
+}
 
 
 @media (min-width:@tablet-width) {
@@ -39,21 +54,36 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 768px;
+    padding: 42px 0 36px;
+    align-items: baseline;
   }
   .city-list__item {
     width: 33.33%;
     flex-direction: column;
     align-items: center;
-    padding: 60px 36px;
   }
   .city-list__wrapper {
     text-align: center;
+    padding: 0px 32px;
   }
   .city-list__icon {
-    margin-bottom: 26px;
+    margin-bottom: 11px;
   }
   .city-list__title {
-    margin-bottom: 34px;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .city-list__icon-wrapper {
+    min-height: 76px;
+    width: 76px;
+    flex-shrink: 0;
+    margin-right: 0px;
+    margin-bottom: 9px;
+  }
+  .features__container--reverse picture {
+    order:-1;
   }
 }
 @media (min-width:@desktop-width) {
@@ -61,20 +91,26 @@
     width: 1200px;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0 0 15px;
   }
   .city-list__item {
     width: 33.33%;
     flex-direction: column;
     align-items: center;
-    padding: 60px 36px;
+    padding: 42px 36px;
   }
   .city-list__wrapper {
     text-align: center;
+    padding: 0px 20px;
   }
   .city-list__icon {
     margin-bottom: 26px;
   }
   .city-list__title {
-    margin-bottom: 34px;
+    margin-bottom: 24px;
   }
+  .city-list__icon-wrapper {
+    margin-bottom:-7px;
+  }
+
 }

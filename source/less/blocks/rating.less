@@ -51,25 +51,40 @@
 }
 
 @media (min-width:@tablet-width) {
+  .rating{
+    margin-bottom: 48px;
+  }
+  .rating .feedback-form__title{
+    padding-top: 0;
+  }
   .rating__list {
     display: flex;
     flex-wrap: wrap;
-    width: 648px;
     flex-direction: row;
+    padding-left: 34px;
+    padding-right: 10px ;
   }
   .rating__item {
-    width:280px;
+    width: 297px;
   }
+
 
 }
   @media (min-width:@desktop-width) {
+  .rating {
+    padding-top: 34px;
+    margin-bottom: 57px;
+  }
   .rating__list {
     display: flex;
     flex-wrap: wrap;
-    width: 960px;
     flex-direction: row;
+    width: 858px;
+    padding: 0;
+    gap: 0 64px;
   }
   .rating__item {
-    width:280px;
+    width: auto;
+    margin-bottom: 0;
   }
 }

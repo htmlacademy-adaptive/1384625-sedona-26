@@ -41,25 +41,35 @@
   background-repeat: no-repeat;
 }
 @media (min-width:@tablet-width) {
+  .attractions{
+    margin-bottom: 26px;
+  }
   .attractions__list {
     display: flex;
     flex-wrap: wrap;
-    width: 648px;
-    justify-content: center;
+    flex-direction: row;
+    width: 480px;
+    margin: 0 auto;
+    gap: 0 32px;
   }
-  .attractions__item {
+  .attractions__item{
     width: 224px;
   }
 }
 @media (min-width:@desktop-width) {
+  .attractions{
+    padding-top: 50px;
+    margin-bottom: 71px;
+  }
   .attractions__list {
     display: flex;
     flex-wrap: wrap;
     width: 960px;
-    justify-content: center;
+    padding: 0 0 0 43px;
   }
   .attractions__item {
-    width: 172px;
+    width: 203px;
+    margin-bottom: 0;
   }
 }
 

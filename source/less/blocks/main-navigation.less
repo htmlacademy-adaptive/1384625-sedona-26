@@ -2,9 +2,10 @@
   position: relative;
   width: auto;
 }
+
 .main-navigation--opened {
-  position: absolute;
-  top:0;
+  position: relative;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 3;
@@ -21,31 +22,37 @@
   right: 3px;
   z-index: 2;
 }
+
 .main-navigation__toggle-burger {
-  fill:#81B3D2;
+  fill: #81b3d2;
 }
+
 .main-navigation__toggle-close {
   display: none;
 }
+
 .main-navigation__wrapper {
   display: none;
 }
+
 .main-navigation--opened .main-navigation__wrapper {
   display: block;
 }
 
-.main-navigation--opened .main-navigation__toggle-burger{
+.main-navigation--opened .main-navigation__toggle-burger {
   display: none;
 }
-.main-navigation--opened .main-navigation__toggle-close{
+
+.main-navigation--opened .main-navigation__toggle-close {
   display: block;
 }
+
 .main-navigation--opened .main-navigation__toggle {
   display: none;
 }
+
 .main-navigation__list {
   list-style: none;
-  margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -53,9 +60,8 @@
   margin: 0 auto;
 }
 
-
 .main-navigation__link {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -68,7 +74,7 @@
   color: @mob-nav_txt-color;
   border-top: 1px solid lighten(@mob-nav_bg-color, 20%);
   border-bottom: 1px solid darken(@mob-nav_bg-color, 20%);
-  background-color:#81B3D2 ;
+  background-color: #81b3d2;
 }
 
 @media (min-width: @tablet-width) {
@@ -76,23 +82,24 @@
     flex-direction: row;
     width: 768px;
   }
+
   .main-navigation__link {
     color: @tab-nav_txt-color;
-    background-color:  @tab-nav_bg-color;
+    background-color: @tab-nav_bg-color;
     border: none;
     font-size: 14px;
     line-height: 26px;
-
+    width: 153px;
   }
+
   .main-navigation__item:nth-of-type(2) .main-navigation__link {
     margin-right: 153px;
   }
-  .main-navigation__link {
-    width: 153px;
-  }
+
   .main-navigation__toggle {
-    display:none;
+    display: none;
   }
+
   .main-navigation__wrapper {
     display: block;
   }
@@ -103,23 +110,26 @@
     flex-direction: row;
     width: 1200px;
   }
+
   .main-navigation__link {
     color: @tab-nav_txt-color;
-    background-color:  @tab-nav_bg-color;
+    background-color: @tab-nav_bg-color;
     border: none;
     width: 240px;
     font-size: 14px;
     line-height: 21px;
     padding: 19px 27px 13px;
   }
+
   .main-navigation__item:nth-of-type(2) .main-navigation__link {
     margin-right: 240px;
   }
-  .main-navigation__toggle{
-    display:none;
+
+  .main-navigation__toggle {
+    display: none;
   }
+
   .main-navigation__wrapper {
     display: block;
   }
-
 }
